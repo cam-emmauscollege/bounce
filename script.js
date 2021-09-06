@@ -34,6 +34,7 @@ function draw() {
   x = x + speedX;
   y = y + speedY;
 
+  // laat stuiteren tegen de onderkant
   if (y === 720) {
     speedY = speedY * -1;
   }
