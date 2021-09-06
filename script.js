@@ -3,8 +3,6 @@ var y = 50;
 var speedX = 2;
 var speedY = 5;
 
-
-
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
@@ -14,7 +12,6 @@ function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
 
-  
 }
 
 
@@ -33,12 +30,11 @@ function draw() {
   // teken een cirkel
   ellipse(x, y, 80, 80);
 
-  // positie van bal updaten
+  //positie updaten
   x = x + speedX;
   y = y + speedY;
 
   if (y === 720) {
     speedY = speedY * -1;
   }
-
 }
