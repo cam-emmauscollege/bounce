@@ -1,8 +1,5 @@
 // globale variabelen
-var x = 50;
-var y = 50;
-var speedX = 2;
-var speedY = 5;
+var bal = new Bal(50, 100);
 
 /**
  * setup
@@ -25,18 +22,6 @@ function draw() {
   // Kleur de achtergrond blauw, zodat je het kunt zien
   background('blue');
 
-  // stel vulkleur in
-  fill(255, 255, 255);
-
-  // teken een cirkel
-  ellipse(x, y, 80, 80);
-
-  //positie updaten
-  x = x + speedX;
-  y = y + speedY;
-
-  // laat stuiteren tegen de onderkant
-  if (y === 720) {
-    speedY = speedY * -1;
-  }
+  bal.show();
+  bal.update();
 }
