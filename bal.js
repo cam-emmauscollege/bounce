@@ -11,6 +11,8 @@ class Bal {
     this.speedY = -4;
   }
 
+  // update de positie van de bal en klapt bij
+  // de kant de snelheid om
   update() {
     this.x = this.x + this.speedX;
     this.y = this.y + this.speedY;
@@ -23,6 +25,7 @@ class Bal {
     }
   }
 
+  // toont de bal
   show() {
     fill(255, 0, 0);
     ellipse(this.x, this.y, 50, 50);
