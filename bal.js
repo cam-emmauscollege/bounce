@@ -1,9 +1,15 @@
 class Bal {
+  // declareer de attributen van deze class
   x;
   y;
   speedX;
   speedY;
 
+  // constructor 'maakt' een nieuw object
+  // dit wordt aangeroepen als je 'new Bal' gebruikt.
+  // de benodigde waarden voor een nieuwe
+  // bal worden hieraan meegegeven en vervolgens
+  // in attributen gestopt.
   constructor(newX, newY, _speedX, _speedY) {
     this.x = newX;
     this.y = newY;
@@ -27,7 +33,10 @@ class Bal {
 
   // toont de bal
   show() {
+    // kleur wordt rood
     fill(255, 0, 0);
+    
+    // teken de bal met als middelpunt de x- en y-waarde
     ellipse(this.x, this.y, 50, 50);
   }
 }
